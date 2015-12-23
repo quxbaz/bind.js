@@ -9,7 +9,7 @@ var doc = document;
 function each(obj, fn, context) {
   if (Array.isArray(obj)) {
     for (var i=0; i < obj.length; i++)
-      fn.call(context, obj, i);
+      fn.call(context, obj[i], i);
   }
   else {
     for (var k in obj) {
